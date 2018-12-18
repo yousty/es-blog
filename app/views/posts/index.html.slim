@@ -1,0 +1,15 @@
+
+table
+  tr
+    th= "Title"
+    th= "Author"
+    th= "History"
+
+  - @posts.each do |post|
+    tr
+      td= post.title
+      td= post.author
+      td= post_history_link(post.uid)
+
+p= link_to "New Post", new_post_path
+

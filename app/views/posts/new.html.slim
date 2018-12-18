@@ -1,0 +1,17 @@
+= form_with model: @post, url: posts_path do |f|
+  p
+    = f.label :author, "Author"
+    br
+    = f.text_field :author
+
+  p
+    = f.label :title, "Title"
+    br
+    = f.text_field :title
+
+  p
+    = f.label :content, "Content"
+    br
+    = f.text_field :content
+
+  = f.submit "Create Post"
